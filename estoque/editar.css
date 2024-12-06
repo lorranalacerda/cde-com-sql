@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-color: #e5d8d8;
+    text-align: center;
+    padding: 70px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #0056b3;
+    margin-bottom: 20px;
+    margin: 1%;
+}
+
+form {
+    flex-direction: column;
+    display: flex;
+    text-align: start;
+    background-color: #f6f3f1e3;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 60%;
+    line-height: 2rem;
+    font-size: 1.1em;
+    color: #4c4b4b;
+    margin-bottom: 20px;
+}
+
+input{
+    border: solid 1.5px;
+    border-radius: 3px;
+    font-size: 15px;
+    border-color: #4443439e;
+    padding: 10px;
+}
+
+.buttons-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 35px; 
+    margin-top: 20px; 
+}
+
+button {
+    background-color: #007BFF;
+    border: none;
+    padding: 7px 20px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 150px; 
+}
+
+button a {
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.voltar {
+    background-color: #ff0000;
+}
+
+.voltar:hover {
+    background-color: #b30000;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff1f1;
+    background-color: #444343;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    line-height: 1.5rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: #79b3f1;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #1184ff;
+}
+
+
+@media (max-width: 768px) {
+    /* tablets */
+     body {
+         padding: 10px;
+     }
+ 
+     table {
+         width: 100%;
+     }
+ 
+     button {
+         width: 100%; 
+         padding: 12px;
+     }
+ }
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .buttons-container {
+            flex-direction: column;
+            gap: 10px; 
+        }
+    
+        button {
+            width: 100%; 
+            padding: 12px;
+        }
+    }
+
+    .footer {
+        font-size: 0.9em;
+        padding: 15px;
+    }

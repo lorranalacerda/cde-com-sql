@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e5d8d8;
+    text-align: center;
+    padding: 70px 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: #f6f3f1e3;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%; 
+    max-width: 600px; 
+    line-height: 2rem;
+    font-size: 1.1em;
+    color: #4c4b4b;
+    margin-bottom: 20px;
+}
+
+input {
+    border: solid 1.5px #4443439e;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 10px; 
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    margin-top: 20px;
+    flex-wrap: wrap; 
+}
+
+button {
+    background-color: #007BFF;
+    border: none;
+    padding: 7px 20px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 150px;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.voltar {
+    background-color: #ff0000;
+}
+
+.voltar:hover {
+    background-color: #b30000;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff1f1;
+    background-color: #444343;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    line-height: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #79b3f1;
+}
+
+footer a:hover {
+    color: #1184ff;
+}
+
+@media (max-width: 768px) {
+    /* Para tablets */
+    body {
+        padding: 10px;
+    }
+
+    form {
+        width: 90%; 
+    }
+
+    button {
+        width: 100%; 
+        padding: 12px;
+    }
+
+    .buttons-container {
+        gap: 15px; 
+    }
+}
+
+@media (max-width: 600px) {
+    /* Para celulares */
+    form {
+        width: 95%; 
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        gap: 10px; 
+    }
+
+    button {
+        width: 100%; 
+        padding: 12px;
+    }
+
+    footer {
+        font-size: 0.9em;
+        padding: 15px;
+    }
+}
